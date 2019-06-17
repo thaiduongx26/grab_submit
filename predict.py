@@ -8,6 +8,7 @@ import argparse
 import os
 import pandas as pd
 from yolo import YOLO
+from tqdm import tqdm
 
 weights_path = "models/model.80-0.86.hdf5"
 num_classes = 196
@@ -84,7 +85,7 @@ if __name__ == "__main__":
         result = []
         if(os.path.isdir(argv.testdir)):
             listimg = os.listdir(argv.testdir)
-            for i in range(len(listimg)):
+            for i in tqdm(range(len(listimg))):
                 image = cv2.imread((argv.testdir) + "/" + listimg[i])
                 filename.append(listimg[i])
                 res = predict(image, model)
@@ -92,4 +93,4 @@ if __name__ == "__main__":
             res_final = {"filename": filename, "result": result}
             data = pd.DataFrame(data=res_final)
             data.to_csv('data.csv', index=False)
-            print(data)
+            print("Done! Check data.csv !")
