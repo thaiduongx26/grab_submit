@@ -57,7 +57,7 @@ if __name__ == "__main__":
     model_checkpoint = ModelCheckpoint(model_names, monitor='val_acc', verbose=1, save_best_only=True)
     callbacks = [tensor_board, model_checkpoint, csv_logger, early_stop, reduce_lr]
 
-    model = createModel()
+    model = createModel(num_classes)
 
     model.fit_generator(
         train_generator,

@@ -60,6 +60,6 @@ if __name__ == "__main__":
                 result.append(res)
             res_final = {"filename": filename, "result": result}
             data = pd.DataFrame(data=res_final)
-            data.to_csv(index=False)
+            data.to_csv('data.csv', index=False)
             print(data)
 
