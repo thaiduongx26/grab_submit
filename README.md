@@ -13,7 +13,7 @@ Notice that I have prepared the requirements.txt file
 4. wget http://imagenet.stanford.edu/internal/car196/cars_test.tgz
 5. tar zxvf cars_train.tgz
 6. tar zxvf cars_test.tgz
-7. cd..
+7. cd ..
 8. python3 preprocess.py
 9. python3 train.py
 ```
