@@ -25,5 +25,5 @@ Download [model_grab_challenge.zip](https://drive.google.com/file/d/1jj-dv_Pe_w2
     python3 predict.py --image /path/to/image
     python3 predict.py --testdir /path/to/dir
 ```
-The option --image will show result in terminal
+The option --image will show result in terminal</br>
 The option --testdir will save result in csv file (data.csv)
