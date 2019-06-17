@@ -16,6 +16,8 @@ Notice that I have prepared the requirements.txt file
 7. python3 preprocess.py
 8. python3 train.py
 ```
+### Training baseline 
+![](https://github.com/thaiduongx26/grab_submit/blob/master/image/baseline-training.png)
 
 ## Testing
 Download [model_grab_challenge.zip](https://drive.google.com/file/d/1jj-dv_Pe_w2nvLrMsTqk0SioWRfPj1zG/view?usp=sharing)
@@ -27,3 +29,5 @@ Download [model_grab_challenge.zip](https://drive.google.com/file/d/1jj-dv_Pe_w2
 ```
 The option --image will show result in terminal </br>
 The option --testdir will save result in csv file (data.csv)
+### Testing baseline
+![alt text](https://github.com/thaiduongx26/grab_submit/blob/master/image/baseline-testing.png)
