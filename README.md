@@ -2,7 +2,7 @@
 ## Getting started
 Notice that I have prepared the requirements.txt file
 ```
-1. Make a env
+1. Make a env (p)
 2. Install requirements.txt
 ```
 ## Training
